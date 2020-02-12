@@ -1,0 +1,165 @@
+.Content{
+	background:url("../images/start.jpg")center center fixed;
+	background-size:cover;
+	min-height:100%;
+
+	@media all and (max-width: 1024px){
+		 background-attachment: scroll;
+	}
+
+	&-container{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		@media all and (max-width: 1024px){
+        display: flex;
+  		flex-wrap: wrap;
+    	}
+	}
+
+	&-containerText{
+		font-size: 20px;
+		color:white;
+		text-shadow: 1px 1px 1px black, 0 0 1em black;
+		font-weight: 600;
+		text-align: center;
+
+		@media all and (max-width: 1024px){
+        font-size: 15px;
+    	}
+	}
+
+	&-containerTextSpan{
+		font-weight: 800;
+		text-shadow: 1px 1px 2px black, 0 0 1em black;
+		color:white;
+	}
+	
+	&-containerImage{
+		width: 100px;
+		margin:0 auto;
+
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+            width: 80px;
+    	}
+
+    	@media all and (max-width: 480px) and (min-width: 320px) {
+           width:50px; 
+   		}
+	}
+
+	&-containerItem{
+		margin:5% 10% 3%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+
+		@media all and (max-width: 1024px){
+            width: 40%;
+            margin:0;
+            margin-top: 40px;
+    	}
+	}
+
+	&-containerForm{
+		display: flex;
+		justify-content:center;
+		padding-bottom: 7%;
+	}
+
+	&-containerFormInput{
+		font-size: 25px;
+    	color:black;
+    	background: #fff url(../images/tel.png) no-repeat left 2.5rem center;
+    	height: 55px;
+    	width: 370px;
+    	border-radius: 10px;
+
+    	@media all and (max-width: 1024px) and (min-width: 480px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:79%;
+            margin:auto;
+            margin-top: 25px;
+        }
+
+        @media all and (max-width: 480px) and (min-width: 320px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:60%;
+            margin:auto;
+            margin-top: 25px;
+        }
+	}
+	
+	&-containerButton{
+		background-color:yellow;
+		color:@text-colorblack;
+		border-radius: 10px;
+		margin-top:5%;
+		width: 445px;
+		height: 55px;
+		font-size: 20px; 
+		border:1px solid rgb(150, 150, 150);
+
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:auto;
+            width:100%;
+            margin-top:5%;
+        }
+
+        @media all and (max-width: 480px) and (min-width: 320px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:auto;
+            width:80%;
+			margin-top:5%;
+
+        }
+	}
+	&-containerButton:hover{
+		background-color: rgb(255,250,170);
+	}
+
+	&-containerButton:active {
+        padding-bottom:3px;
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+    }
+	input{
+		padding-left:70px;
+		height: 55px;
+		line-height: 55px;
+	}
+
+    input::-webkit--placeholder {
+    	font-size: 17px;
+    }
+	input::-moz-placeholder {
+		font-size: 1px;
+  	}
+
+	input:-moz-placeholder {
+		font-size: 17px;
+   	 }
+
+	input:ms-placeholder {
+		font-size: 17px;
+    }
+
+	input::placeholder {
+		font-size: 17px;
+
+        @media all and (max-width: 480px) and (min-width: 320px) {
+            font-size: 15px;
+		}
+	}
+}
+
+	

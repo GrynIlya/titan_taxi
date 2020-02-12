@@ -1,0 +1,309 @@
+.ThirdScreen{
+		background:url("../images/ThirdScreen.jpg")no-repeat center center fixed;
+		background-size:cover;
+		min-height: 100%;
+		display: flex;
+		flex-direction: row;
+		text-shadow: 2px 2px 7px #000;
+
+		@media all and (max-width: 1024px){
+			background-attachment: scroll;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+	&-content{
+		text-align: center;
+		min-width: 50%;
+
+		@media all and (max-width: 1024px) and (min-width: 320px) {
+			width: 100%;
+		}
+	}
+
+	&-calc{
+		text-align: center;
+		margin-top:6%;
+		margin-left:5%;
+
+		@media all and (max-width: 1024px){
+			margin: 0 auto;
+			margin-top:15%;
+			margin: 5%;
+		}
+	}
+
+	&-calcDate{
+		font-size: 34px;
+		margin-bottom: 5%;
+
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+			font-size: 20px;
+		}
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			font-size: 15px;
+		}
+	}
+
+	#ThirdScreen-calcTimeOutput{
+		font-size: 34px;
+	}
+
+	#ThirdScreen-calcDayOutput{
+		font-size: 34px;
+	}
+
+	#ThirdScreen-calcOutputSum{
+		font-size: 60px;
+	}
+
+	input[type=range] {
+		-webkit-appearance: none;
+		width:70%;
+		margin: 6.4px 0;
+	}
+	input[type=range]:focus {
+		outline: none;
+	}
+	input[type=range]::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 12.2px;
+		cursor: pointer;
+		box-shadow: 1.1px 1.1px 1.1px #000000, 0px 0px 1.1px #0d0d0d;
+		background: #e7c842;
+		border-radius: 4px;
+		border: 0.3px solid #010101;
+	}
+	input[type=range]::-webkit-slider-thumb {
+		box-shadow: 2px 2px 2px #000022, 0px 0px 2px #00003c;
+		border: 2.1px solid #000000;
+		height: 25px;
+		width: 25px;
+		border-radius: 15px;
+		background: #ffffff;
+		cursor: pointer;
+		-webkit-appearance: none;
+		margin-top: -6.7px;
+	}
+	input[type=range]:focus::-webkit-slider-runnable-track {
+		background: #eed97d;
+	}
+	input[type=range]::-moz-range-track {
+		width: 100%;
+		height: 12.2px;
+		cursor: pointer;
+		box-shadow: 1.1px 1.1px 1.1px #000000, 0px 0px 1.1px #0d0d0d;
+		background: #e7c842;
+		border-radius: 4px;
+		border: 0.3px solid #010101;
+	}
+	input[type=range]::-moz-range-thumb {
+		box-shadow: 2px 2px 2px #000022, 0px 0px 2px #00003c;
+		border: 2.1px solid #000000;
+		height: 25px; //поле для размеров ездящего слайдера
+		width: 25px;  //поле для размеров ездящего слайдера надо его менять чтоб палец не терял фокус при скроле на м.
+		border-radius: 15px;
+		background: #ffffff;
+		cursor: pointer;
+	}
+	input[type=range]::-ms-track {
+		width: 100%;
+		height: 12.2px;
+		cursor: pointer;
+		background: transparent;
+		border-color: transparent;
+		color: transparent;
+	}
+	input[type=range]::-ms-fill-lower {
+		background: #cdab1a;
+		border: 0.3px solid #010101;
+		border-radius: 8px;
+		box-shadow: 1.1px 1.1px 1.1px #000000, 0px 0px 1.1px #0d0d0d;
+	}
+	input[type=range]::-ms-fill-upper {
+		background: #e7c842;
+		border: 0.3px solid #010101;
+		border-radius: 8px;
+		box-shadow: 1.1px 1.1px 1.1px #000000, 0px 0px 1.1px #0d0d0d;
+	}
+	input[type=range]::-ms-thumb {
+		box-shadow: 2px 2px 2px #000022, 0px 0px 2px #00003c;
+		border: 2.1px solid #000000;
+		height: 25px;
+		width: 25px;
+		border-radius: 15px;
+		background: #ffffff;
+		cursor: pointer;
+		height: 12.2px;
+	}
+	input[type=range]:focus::-ms-fill-lower {
+		background: #e7c842;
+	}
+	input[type=range]:focus::-ms-fill-upper {
+		background: #eed97d;
+	}
+
+
+	&-containerForm{
+		box-sizing: border-box;
+		margin-top: 5%;
+		margin-bottom:2%;
+	}
+
+	&-containerFormBoxInput{
+		font-size: 25px;
+		color:black;
+		background:#fff url(../images/tel.png) no-repeat left 2.5rem center;
+		height: 55px;
+		width: 370px;
+		border-radius: 10px;
+
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width:79%;
+			margin:auto;
+		}
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width:60%;
+			margin:auto;;
+		}
+
+	}
+
+	&-containerBoxForm{
+		display: flex;
+		justify-content:center;
+	}
+
+	input[type="tel"]{
+		padding-left:70px;
+		height: 55px;
+		line-height: 55px;
+	}
+
+	input[type="tel"]::-webkit--placeholder {
+		font-size: 17px;
+	}
+
+	input[type="tel"]::-moz-placeholder {
+		font-size: 17px;
+	}
+
+	input[type="tel"]:-moz-placeholder {
+		font-size: 17px;
+	}
+
+	input[type="tel"]:ms-placeholder {
+		font-size: 17px;
+	}
+
+	input[type="tel"]::placeholder {
+		font-size: 17px;
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			font-size: 15px;
+		}
+	}
+
+	&-containerFormBox{
+		margin-top: 5%;
+		box-sizing: border-box;
+	}
+
+	&-containerButton{
+		background-color:yellow;
+		color:@text-colorblack;
+		border-radius: 10px;
+		margin-top:20px;
+		width: 445px;
+		height: 55px;
+		border: none;
+		font-size: 20px;
+
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin:auto;
+			width:100%;
+			margin-top:5%;
+		}
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin:auto;
+			width:80%;
+			margin-top:5%;
+		}
+
+	}
+
+	&-containerButton:hover{
+		background-color: rgb(255,250,170);
+	}
+
+	&-containerButton:active {
+		padding-bottom:3px;
+		box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+	}
+
+	&-comment{
+		min-width: 50%;
+
+		@media all and (max-width: 1024px) and (min-width: 230px) {
+			padding-bottom: 6%;
+		}
+	}
+	
+	&-commentBody{
+		margin-top:6%;
+	}	
+	
+	&-commentTitle{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	&-commentAvatar{
+		width: 60px;
+		height: 60px;
+		text-align: center;
+	}
+	
+	&-commentDescription{
+		display: flex;
+		flex-direction: column;
+		margin-top:1%;
+	}
+
+	&-commentName{
+		font-size: 18px;
+		text-align: left;
+		margin-left: 10%;
+	}
+
+	&-commentDate{
+		font-size: 10px;
+		text-align: left;
+		margin-left: 10%;
+
+	}
+
+	&-commentText{
+		text-align: center;
+		margin:3% 5%;
+		font-size: 20px;
+	}
+}
